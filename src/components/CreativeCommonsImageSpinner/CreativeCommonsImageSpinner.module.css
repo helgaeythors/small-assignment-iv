@@ -1,0 +1,17 @@
+.image {
+    width: 150px;
+    height: 150px;
+}
+
+.spinner {
+    padding: 70px;
+    width: 150px;
+    height: 150px;
+    animation: spinner 3s infinite ease-in-out;
+    
+}
+
+@keyframes spinner {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

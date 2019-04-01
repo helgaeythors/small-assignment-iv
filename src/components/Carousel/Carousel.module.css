@@ -1,0 +1,53 @@
+.carousel {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    border: solid gray;
+    border-width: 0 5px 5px 0;
+    padding: 3px;
+}
+
+.leftArrow:hover {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.rightArrow:hover {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.leftArrow {
+    composes: arrow;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.rightArrow {
+    composes: arrow;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.small {
+    composes: carousel;
+    width: 250px;
+    height: 150px;
+}
+
+.medium {
+    composes: carousel;
+    width: 350px;
+    height: 250px;
+}
+
+.large {
+    composes: carousel;
+    width: 550px;
+    height: 350px;
+}
